@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Events 3.0 Prototype</title>
+	<link type="text/css" href="stylesheets/screen.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!--script src="js/vendor/modernizr-2.6.2.min.js"></script -->
+</head>
+<body class="prototype">
+    <header>
+        <!-- this will be the new wider okl header -->
+        <h1>OKL Header</h1>
+    </header>
+    <article class="story">
+        <h2>Story Name</h2>
+
+        <section class="introduction">
+            <!-- TODO: plain textual header -->
+            <!-- TODO: image/text header similar to current -->
+        </section>
+
+        <nav class="table-of-contents">
+            <ol>
+                <li><a href="#okl-chapter-a" title="Chapter A">Chapter A</a></li>
+                <li><a href="#okl-chapter-b" title="Chapter B">Chapter B</a></li>
+                <li><a href="#okl-chapter-c" title="Chapter C">Chapter C</a></li>
+                <li><a href="#okl-chapter-d" title="Chapter D">Chapter D</a></li>
+                <li><a href="#okl-chapter-e" title="Chapter E">Chapter E</a></li>
+            </ol>
+        </nav>
+
+        <section class="chapter A" id="okl-chapter-a">
+            <header>
+                <h3>Chapter A: complex layouts</h3>
+                <p>Chocolate bar biscuit caramels lemon drops dessert croissant fruitcake. </p>
+                <!--ul>
+                    <li>One to three wide image</li>
+                    <li>Overlay copy</li>
+                    <li class="v2">Optional Linked SKUs</li>
+                    <li class="v2">Shoppable Look</li>
+                </ul-->
+            </header>
+
+            <ol>
+
+                <li>sku</li>
+                <li>sku</li>
+
+                <li class="pull-quote"><!-- Layout A is implied -->
+                    <h3>Brownie A</h3>
+                    <blockquote>Tootsie roll ice cream cotton candy faworki jelly beans pie powder dragée pastry. Chocolate tiramisu gummies icing macaroon candy canes wafer.</blockquote>
+                </li>
+                <li>sku 1</li>
+                <li>sku 2</li>
+
+                <li class="pull-quote layout-b">
+                    <h3>Brownie B</h3>
+                    <blockquote>Tootsie roll ice cream cotton candy faworki jelly beans pie powder dragée pastry. Chocolate tiramisu gummies icing macaroon candy canes wafer.</blockquote>
+                </li>
+                <li>sku 1</li>
+                <li>sku 2</li>
+
+                <li class="pull-quote layout-c">
+                    <h3>Brownie C</h3>
+                    <blockquote>Tootsie roll ice cream cotton candy faworki jelly beans pie powder dragée pastry. Chocolate tiramisu gummies icing macaroon candy canes wafer.</blockquote>
+                </li>
+                <li>sku 1</li>
+                <li>sku 2</li>
+
+                <li class="key-product">Key Product sku 1</li><!-- Layout A is implied --><!-- needs 2 1x1s after to start next row -->
+                <li>sku 2</li>
+                <li>sku 3</li>
+
+                <li class="key-product layout-b">Key Product sku 1</li>
+                <li>sku 2</li>
+                <li>sku 3</li>
+
+                <li class="lamp-like">lamp!</li> <!-- Layout A is implied --><!-- needs 4 1x1s after to start next row -->
+                <li>sku 2</li>
+                <li>sku 3</li>
+                <li>sku 4</li>
+                <li>sku 5</li>
+
+                <li class="lamp-like layout-b">lamp!</li>
+                <li>sku 2</li>
+                <li>sku 3</li>
+                <li>sku 4</li>
+                <li>sku 5</li>
+
+                <li class="lamp-like layout-c">lamp!</li>
+                <li>sku 2</li>
+                <li>sku 3</li>
+                <li>sku 4</li>
+                <li>sku 5</li>
+
+                <li class="couch-like">couch!</li><!-- Layout A is implied --><!-- needs 1 1x1 after to start next row -->
+                <li>sku 1</li>
+
+                <li class="couch-like layout-b">couch!</li>
+                <li>sku 1</li>
+
+                <li class="slideshow">slideshow!</li>
+
+                <li class="interactive">interactive</li>
+
+            </ol>
+        </section>
+        <section class="chapter" id="okl-chapter-b">
+            <h3>Chapter B</h3>
+            <ol>
+
+                <li>sku</li>
+                <li>sku</li>
+                <li>sku</li>
+
+                <li>sku</li>
+                <li>sku</li>
+                <li>sku</li>
+
+                <li>sku</li>
+                <li>sku</li>
+                <li>sku</li>
+
+            </ol>
+        </section>
+    </article>
+    <footer>
+        <h2>OKL footer</h2>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+
+
+        ;(function( window, undefined ) {
+            // TODO: sticky toc
+//             var $nav = $('.story nav'), $clone;
+//
+//             if (1 === $nav.length) {
+//                 $clone = $nav.clone(true).addClass('fixed-nav');
+//                 $clone.appendTo('body');
+//                 console.log('this', $('body').html());
+//             }
+//             $(window).scroll(function ( ev ) {
+//                 console.log('ev', ev, this);
+//             });
+
+//             function async(u, c) {
+//                 var d = document, t = 'script',
+//                     o = d.createElement(t),
+//                     s = d.getElementsByTagName(t)[0];
+//                 s.setAttribute('type', 'text/javascript');
+//                 o.src = 'http://' + u;
+//                 if (c) {
+//                     s.addEventListener('load', function (e) {
+//                         c(null, e);
+//                     }, false);
+//                 }
+//                 s.parentNode.insertBefore(o, s);
+//             }
+//
+//             async('ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', function ( ) {
+//                 console.log('jquery', typeof jQuery, typeof $);
+//             });
+
+//             require(['jquery'], function($) {
+//                 //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
+//                 console.log('jquery', typeof jQuery, typeof $);
+//                 $(function() {
+//                     $('body').alpha().beta();
+//                 });
+//             });
+
+        })(window);
+    </script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "salsa/salsa";
+
+// @import "compass/typography/vertical_rhythm";
+// @import "blueprint/grid";
+
+$product-height: 60px;
+
+/* greyscale */
+$g1: rgb(25, 25, 24);
+$g2: rgb(64, 62, 61);
+$g2a: rgba(64, 62, 61, .8);
+$g3: rgb(127, 124, 122);
+$g4: rgb(191, 185, 183);
+$g5: rgb(255, 247, 244);
+$g5a: rgba(255, 247, 244, .8);
+
+/* salsa overrides */
+$container-width: 1140px;
+$columns: 12;
+$gutter-width: 20px;
+
+@mixin clearing-row() {
+    + li {
+        @include span(4, row);
+        clear: both;
+        + li {
+            @include span(4, 4);
+            + li {
+                @include span(4, 8);
+            }
+        }
+    }
+}
+
+%box-size {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header,
+article,
+footer {
+    @extend %box-size;
+    border: 1px solid $g1;
+    border-bottom-width: 0;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    width: $container-width;
+}
+
+header {
+    height: 90px;
+    padding-top: $gutter-width/2;
+    h1 {
+        text-align: center;
+    }
+}
+
+.story {
+
+    @include container;
+    //@include salsa-background;
+    // background: $g4;
+
+    nav {
+        &.fixed-nav {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+        li {
+            @extend %box-size;
+            display: inline-block;
+            white-space: nowrap;
+            a {
+                padding: .2em;
+            }
+            &:after {
+                content: "/";
+            }
+            &:last-child:after {
+                content: "";
+            }
+        }
+    }
+
+    .chapter {
+        h3 {
+            clear: left;
+        }
+
+        > header {
+            @include span(4);
+            background: $g5a;
+            height: $product-height;
+        }
+
+        > ol { // 1x1 sku block: defaults
+            li {
+                @extend %box-size;
+                @include span(4);
+                background: $g2a;
+                border: 1px dashed $g3;
+                color: $g5;
+                height: $product-height;
+                padding: $gutter-width/2;
+                text-align: center;
+
+                blockquote {
+                    max-height: 60px;
+                    overflow: hidden;
+                }
+                h3 ~ blockquote {
+                    max-height: $product-height/2;
+                }
+            }
+
+            .key-product {
+                clear: both;
+                @include span(8, row); // first
+                height: 2*$product-height;
+                + li { //2
+                    @include span(4, 0);
+                    + li { // 3
+                        @include span(4, 0);
+                        margin-top: $product-height;
+                        + li { // 4
+                            clear: both;
+                            @include span(4, row);
+                        }
+                    }
+                }
+                &.layout-b {
+                    @include span(8, 4); // last
+                }
+            }
+
+            .lamp-like { // 1
+                @include span(4, row);
+                clear: both;
+                height: 2*$product-height;
+                + li { // 2
+                    @include span(4, 0);
+                    + li { // 3
+                        @include span(4, 4);
+                        + li { // 4
+                            @include span(4, 0);
+                            margin-top: $product-height;
+                            + li { // 5
+                                margin-top: $product-height;
+                                @include span(4, 4);
+                                + li {
+                                    clear: both;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.layout-b {
+                    @include span(4, 4);
+                    + li + li,
+                    + li + li + li + li {
+                        @include span(4, 8);
+                    }
+                }
+                &.layout-c {
+                    @include span(4, 8);
+                }
+            }
+
+            .couch-like {
+                @include span(8, 0); // first
+                clear: both;
+                + li {
+                    @include span(4, 8);
+                    + li {
+                        clear: both;
+                    }
+                }
+                &.layout-b {
+                    @include span(8, 4); // last
+                    + li {
+                        @include span(4, 0);
+                    }
+                }
+            }
+
+            .pull-quote {
+                @include span(4, row); // first
+                clear: both;
+                + li {
+                    @include span(4);
+                    + li {
+                        @include span(4);
+                        + li  {
+                            clear: both;
+                        }
+                    }
+                }
+                &.layout-b {
+                    @include span(4, 4); // center
+                    + li {
+                        @include span(4, 8);
+                    }
+                }
+                &.layout-c {
+                    @include span(4, 8); // right
+                }
+            }
+
+            .slideshow,
+            .interactive {
+                @include span(12);
+            }
+
+
+            // TODO: integrated edits
+
+//            .interstitial {
+//                aside {
+//
+//                }
+//                &.layout-b {
+//
+//                }
+//            }
+
+
+        }
+    }
+}
+
+footer {
+    border-bottom-width: 1px;
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    h2 {
+        text-align: center;
+    }
+}
