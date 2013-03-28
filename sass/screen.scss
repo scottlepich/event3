@@ -115,14 +115,6 @@ header {
                 height: $product-height;
                 padding: $gutter-width/2;
                 text-align: center;
-
-                blockquote {
-                    max-height: 60px;
-                    overflow: hidden;
-                }
-                h3 ~ blockquote {
-                    max-height: $product-height/2;
-                }
             }
 
             .key-product {
@@ -198,6 +190,13 @@ header {
             .pull-quote {
                 @include span(4, row); // first
                 clear: both;
+                blockquote {
+                    max-height: $product-height;
+                    overflow: hidden;
+                }
+                h3 ~ blockquote {
+                    max-height: $product-height/2;
+                }
                 + li {
                     @include span(4);
                     + li {

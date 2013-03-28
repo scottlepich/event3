@@ -176,16 +176,7 @@ header h1 {
   padding: 10px;
   text-align: center;
 }
-/* line 119, ../sass/screen.scss */
-.story .chapter > ol li blockquote {
-  max-height: 60px;
-  overflow: hidden;
-}
-/* line 123, ../sass/screen.scss */
-.story .chapter > ol li h3 ~ blockquote {
-  max-height: 30px;
-}
-/* line 128, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .story .chapter > ol .key-product {
   clear: both;
   -moz-box-sizing: border-box;
@@ -198,7 +189,7 @@ header h1 {
   clear: left;
   height: 120px;
 }
-/* line 132, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .story .chapter > ol .key-product + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -210,7 +201,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 0%;
 }
-/* line 134, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .story .chapter > ol .key-product + li + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -223,7 +214,7 @@ header h1 {
   margin-left: 0%;
   margin-top: 60px;
 }
-/* line 137, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 .story .chapter > ol .key-product + li + li + li {
   clear: both;
   -moz-box-sizing: border-box;
@@ -235,7 +226,7 @@ header h1 {
   float: left;
   clear: left;
 }
-/* line 143, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .story .chapter > ol .key-product.layout-b {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -247,7 +238,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 33.33333%;
 }
-/* line 148, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .story .chapter > ol .lamp-like {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -260,7 +251,7 @@ header h1 {
   clear: both;
   height: 120px;
 }
-/* line 152, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .story .chapter > ol .lamp-like + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -272,7 +263,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 0%;
 }
-/* line 154, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .story .chapter > ol .lamp-like + li + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -284,7 +275,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 33.33333%;
 }
-/* line 156, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .story .chapter > ol .lamp-like + li + li + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -297,7 +288,7 @@ header h1 {
   margin-left: 0%;
   margin-top: 60px;
 }
-/* line 159, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .story .chapter > ol .lamp-like + li + li + li + li {
   margin-top: 60px;
   -moz-box-sizing: border-box;
@@ -310,11 +301,11 @@ header h1 {
   margin-right: -100%;
   margin-left: 33.33333%;
 }
-/* line 162, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .story .chapter > ol .lamp-like + li + li + li + li + li {
   clear: both;
 }
-/* line 169, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .story .chapter > ol .lamp-like.layout-b {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -326,7 +317,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 33.33333%;
 }
-/* line 172, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .story .chapter > ol .lamp-like.layout-b + li + li,
 .story .chapter > ol .lamp-like.layout-b + li + li + li + li {
   -moz-box-sizing: border-box;
@@ -339,7 +330,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 66.66667%;
 }
-/* line 176, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .story .chapter > ol .lamp-like.layout-c {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -351,7 +342,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 66.66667%;
 }
-/* line 181, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .story .chapter > ol .couch-like {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -364,7 +355,7 @@ header h1 {
   margin-left: 0%;
   clear: both;
 }
-/* line 184, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .story .chapter > ol .couch-like + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -376,11 +367,11 @@ header h1 {
   margin-right: -100%;
   margin-left: 66.66667%;
 }
-/* line 186, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .story .chapter > ol .couch-like + li + li {
   clear: both;
 }
-/* line 190, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .story .chapter > ol .couch-like.layout-b {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -392,7 +383,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 33.33333%;
 }
-/* line 192, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .story .chapter > ol .couch-like.layout-b + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -404,7 +395,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 0%;
 }
-/* line 198, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .story .chapter > ol .pull-quote {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -416,7 +407,16 @@ header h1 {
   clear: left;
   clear: both;
 }
-/* line 201, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
+.story .chapter > ol .pull-quote blockquote {
+  max-height: 60px;
+  overflow: hidden;
+}
+/* line 197, ../sass/screen.scss */
+.story .chapter > ol .pull-quote h3 ~ blockquote {
+  max-height: 30px;
+}
+/* line 200, ../sass/screen.scss */
 .story .chapter > ol .pull-quote + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -426,7 +426,7 @@ header h1 {
   width: 33.33333%;
   float: left;
 }
-/* line 203, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .story .chapter > ol .pull-quote + li + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -436,11 +436,11 @@ header h1 {
   width: 33.33333%;
   float: left;
 }
-/* line 205, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .story .chapter > ol .pull-quote + li + li + li {
   clear: both;
 }
-/* line 210, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .story .chapter > ol .pull-quote.layout-b {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -452,7 +452,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 33.33333%;
 }
-/* line 212, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .story .chapter > ol .pull-quote.layout-b + li {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -464,7 +464,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 66.66667%;
 }
-/* line 216, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .story .chapter > ol .pull-quote.layout-c {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -476,7 +476,7 @@ header h1 {
   margin-right: -100%;
   margin-left: 66.66667%;
 }
-/* line 222, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .story .chapter > ol .slideshow,
 .story .chapter > ol .interactive {
   -moz-box-sizing: border-box;
@@ -488,7 +488,7 @@ header h1 {
   float: left;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 footer {
   border-bottom-width: 1px;
   clear: both;
@@ -496,7 +496,7 @@ footer {
   line-height: 50px;
   vertical-align: middle;
 }
-/* line 249, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 footer h2 {
   text-align: center;
 }
