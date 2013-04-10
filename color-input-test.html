@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Check it out: color input HTML5 (Chrome)</title>
+</head>
+<body>
+    <form method="post">
+        <label>
+            Color Picker:
+            <input type="color" value="#ffffff" >
+        </label>
+        <label>
+            Color Hex:
+            <input name="background-color" type="text" value="#ffffff" >
+        </label>
+        <button>submit</button>
+    </form>
+    <script>
+        var el =  document.forms[0].elements;
+        document.addEventListener('change', function (ev) {
+           el['background-color'].value = el[0].value;
+        });
+    </script>
+</body>
+</html>
